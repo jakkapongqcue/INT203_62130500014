@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Vue Js - HelloWorld App</title>
+    <title>Basic Vue Js - Spotify</title>
     <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
     <!-- Using via Google Web Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -19,13 +19,13 @@
     <script src="https://unpkg.com/vue@next"></script>
 </head>
 
-<body class="" id="app">
+<body class="bg-black" id="app">
     <!-- header -->
-    <header class="bg-black fixed w-full top-0 z-99">
+    <header class="bg-black fixed w-full top-0 z-99 opacity-100 lg:opacity-90">
         <div class="relative flex max-w-6xl mx-auto h-20 px-4">
             <div class="relative flex items-center ">
                 <a href="https://www.spotify.com/th-th/">
-                    <svg viewBox="0 0 63 20 " width="150" class="px-3 py-5 fill-current text-white hover:text-green-400 transition duration-300">
+                    <svg viewBox="0 0 63 20 " width="150" class="px-3 py-5 fill-current text-white hover:text-green-400 transition duration-200 transform hover:scale-105">
                         <path
                             d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908
                     0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001
@@ -49,15 +49,15 @@
             </div>
             <nav class="flex items-center absolute inset-y-0 right-0">
                 <ul class="flex">
-                    <li class="text-gray-300 font-medium px-3 text-white font-bold"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-300">Premium</a></li>
                     <div class="flex hidden md:inline-flex">
-                        <li class="text-gray-300 font-medium px-3 text-white font-bold"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-300">{{lang.support}}</a></li>
-                        <li class="text-gray-300 font-medium px-3 text-white font-bold"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-300">{{lang.download}}</a>
+                        <li class="text-gray-300 font-medium px-3 text-white font-bold"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-200">Premium</a></li>
+                        <li class="text-gray-300 font-medium px-3 text-white font-bold"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-200">{{lang.support}}</a></li>
+                        <li class="text-gray-300 font-medium px-3 text-white font-bold"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-200">{{lang.download}}</a>
                         </li>
+                        <li class="border-r-2 border-gray-300 h-5 w-1 my-auto "></li>
                     </div>
-                    <li class="border-r-2 border-gray-300 h-5 w-1 my-auto "></li>
-                    <li class="text-gray-300 font-medium px-3"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-300">{{lang.singUP}}</a></li>
-                    <li class="text-gray-300 font-medium px-3"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-300">{{lang.logIn}}</a>
+                    <li class="text-gray-300 font-medium px-3"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-200">{{lang.singUP}}</a></li>
+                    <li class="text-gray-300 font-medium px-3"><a href="#" class="px-3 py-7 hover:text-green-400 transition duration-200">{{lang.logIn}}</a>
                     </li>
                 </ul>
             </nav>
@@ -66,25 +66,25 @@
     <!-- mid -->
     <div class="h-screen flex justify-center bg-cover bg-center" style="background-image: url(images/spotify.jpg)">
         <div class=" mx-auto my-auto lg:my-auto max-w-6xl ">
-            <h1 class="flex justify-center text-4xl sm:text-6xl md:text-7xl lg:hidden font-bold m-6 tracking-tighter text-green-400 ">
+            <h1 class="flex justify-center text-4xl sm:text-6xl md:text-7xl lg:hidden font-bold m-6 tracking-tighter text-green-400">
                 Listening is everything</h1>
             <div class="hidden sm:hidden md:hidden lg:inline text-green-400">
                 <h1 class="lg:text-9xl font-bold pr-56 pb-4 tracking-tighter">Listening is</h1>
                 <h1 class="lg:text-9xl font-bold pl-56 tracking-tighter ">everything</h1>
             </div>
             <p class="sm:text-base lg:text-lg flex justify-center m-10 text-green-400 ">{{lang.comment}}</p>
-            <div class="flex justify-center">
-                <a href="https://www.spotify.com/th-en/download/ " @click="clickMe()" class="rounded-full py-3 px-10 bg-green-400 text-indigo-700 hover:bg-white transition duration-300 tracking-wider">{{lang.midButton}}</a>
+            <div class="flex justify-center ">
+                <a href="https://www.spotify.com/th-en/download/ " @click="clickMe()" class="rounded-full py-3 px-10 bg-green-400 text-indigo-700 hover:bg-white transition duration-300 tracking-wider hover:shadow-2xl">{{lang.midButton}}</a>
             </div>
         </div>
     </div>
     <!-- buttom -->
-    <div class="bg-black text-white h-full pb-6 ">
+    <div class="bg-black text-white h-full pb-6 lg:pb-20">
         <!-- about 1-->
-        <div class="container mx-auto pt-10 px-4 max-w-6xl ">
+        <div class="container mx-auto pt-10 md:pt-20 px-4 max-w-6xl ">
             <div class="flex flex-col sm:flex-col md:flex-row lg:flex-row lx:flex-row ">
                 <a href="https://www.spotify.com/th-th/ ">
-                    <svg viewBox="0 0 63 20 " width="150 " class="px-3 py-5 fill-current text-white hover:text-green-400 transition duration-300 ">
+                    <svg viewBox="0 0 63 20 " width="150 " class="px-3 py-5 fill-current text-white hover:text-green-400 transition duration-200 ">
                         <path
                             d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0
         0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043
@@ -104,35 +104,35 @@
                     </svg>
                     <!-- <i class="im im-spotify 96 fill-current text-green-300 "></i> -->
                 </a>
-                <div class="flex flex-col pt-7 pl-7 ">
-                    <p class="text-gray-400 m-1.5 ">บริษัท</p>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">เกี่ยวกับ</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">งาน</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">For the Record</a>
+                <div class="flex flex-col pt-7 md:pl-6 lg:pl-16 ">
+                    <p class="text-gray-400 m-1.5 mb-4">บริษัท</p>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">เกี่ยวกับ</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">งาน</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">For the Record</a>
                 </div>
-                <div class="flex flex-col pt-7 pl-7 ">
-                    <p class="text-gray-400 m-1.5 ">ชุมชน</p>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">สำหรับศิลปิน</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">ผู้พัฒนา</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">โฆษณา</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">นักลงทุน</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">ผู้ให้บริการ</a>
+                <div class="flex flex-col pt-7 md:pl-6 lg:pl-16 ">
+                    <p class="text-gray-400 m-1.5 mb-4">ชุมชน</p>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">สำหรับศิลปิน</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">ผู้พัฒนา</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">โฆษณา</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">นักลงทุน</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">ผู้ให้บริการ</a>
                 </div>
-                <div class="flex flex-col pt-7 pl-7 ">
-                    <p class="text-gray-400 m-1.5 ">ลิงก์ที่เป็นประโยชน์</p>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">การสนับสนุน</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">Web Player</a>
-                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-300 ">แอพมือถือฟรี</a>
+                <div class="flex flex-col pt-7 md:pl-6 lg:pl-16 ">
+                    <p class="text-gray-400 m-1.5 mb-4">ลิงก์ที่เป็นประโยชน์</p>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">การสนับสนุน</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">Web Player</a>
+                    <a href="# " class="m-1.5 hover:text-green-300 transition duration-200 ">แอพมือถือฟรี</a>
                 </div>
                 <!-- link -->
-                <div class="flex flex-col mt-28 md:mt-7 lg:mt-7 ml-7 lg:ml-auto md:ml-auto sm:ml-0 ">
+                <div class="flex flex-col mt-28 md:mt-7 lg:mt-7 pl-7 lg:ml-auto md:ml-auto sm:ml-0 ">
                     <div class="flex ">
-                        <a href="# " class="p-3 m-2 flex items-center rounded-full bg-gray-700 hover:text-green-300 transition duration-300 "><i
+                        <a href="# " class="p-3 m-2 flex items-center rounded-full bg-gray-700 hover:text-green-300 transition duration-200 "><i
                                 class="im im-instagram "></i></a>
-                        <a href="# " class="p-3 m-2 flex items-center rounded-full bg-gray-700 hover:text-green-300 transition duration-300 "><i
+                        <a href="# " class="p-3 m-2 flex items-center rounded-full bg-gray-700 hover:text-green-300 transition duration-200 "><i
                                 class="im im-twitter "></i></a>
                         <a href="# " class="p-3 m-2 flex items-center rounded-full bg-gray-700 "><svg
-                                class="fill-current text-white hover:text-green-400 transition duration-300 "
+                                class="fill-current text-white hover:text-green-400 transition duration-200 "
                                 xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
                                 <path
                                     d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z " />
@@ -163,7 +163,7 @@
                     <a href="#" class="mr-5 text-gray-300 hover:text-green-300 ">About Ads</a>
                 </div>
                 <div class="flex flex-row-reverse w-1/3">
-                    <p class="text-gray-300">© 2021 Spotify AB</p>
+                    <p class="text-gray-300">Spotify for education - No commercial purpose</p>
                 </div>
             </div>
         </div>
