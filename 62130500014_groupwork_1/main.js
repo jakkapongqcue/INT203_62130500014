@@ -38,7 +38,7 @@ const app = {
                 singUP: 'ลงทะเบียน',
                 logIn: 'เข้าสู่ระบบ',
                 comment: 'เพลงและพอดแคสต์หลายล้านรายการ ไม่ต้องใช้บัตรเครดิต',
-                midButton: 'ใช้ SPOTIFY FREE '
+                midButton: 'ใช้ SPOTIFY FREE'
             }
         }
     },
