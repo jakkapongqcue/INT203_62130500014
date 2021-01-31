@@ -29,7 +29,6 @@ const app = {
                 comment: 'Millions of songs and podcasts. No credit card needed.',
                 midButton: 'GET SPOTIFY FREE '
             }
-
         },
         thai() {
             this.lang = {
@@ -42,7 +41,6 @@ const app = {
             }
         }
     },
-
 }
 
 Vue.createApp(app).mount('#app')
