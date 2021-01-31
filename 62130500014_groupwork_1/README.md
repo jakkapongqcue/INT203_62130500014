@@ -1,4 +1,8 @@
 # Web Resources
+
+## Reference
+https://www.spotify.com/th-th/
+
 ## Icons
 ### material-design-icons : https://material.io/resources/icons/?style=baseline
 - CDN
@@ -13,17 +17,6 @@
   ```html
   <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet" />
   ```
-
-## Images
-https://unsplash.com/
-
-## Coloring
-https://coolors.co/
-
-## CSS Framework
-- https://tailwindcss.com/
-- https://tailwindcss.com/docs
-
 # Vue 3
 https://v3.vuejs.org/guide/introduction.html
 
