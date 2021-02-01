@@ -1,13 +1,14 @@
 # Group Work 1 for Education
-## Referent
-
-### Web site Templaete
+## Website reference
 - https://www.spotify.com/th-th/
-- https://drive.google.com/file/d/1TKYHymRXEe9sBiWa5cPvCym0mzwnRda_/view?usp=sharing
+![alt text](/62130500014_groupwork_1/images/reference.jpg?raw=true "Screenshot spotify")
 
-### CSS Framework
+#### Screenshot Reference : https://drive.google.com/file/d/1TKYHymRXEe9sBiWa5cPvCym0mzwnRda_/view?usp=sharing
+
+#### CSS Framework
 - https://tailwindcss.com/
 - https://tailwindcss.com/docs
 
-<Name: Jakkapong Praditthanachot>
-<Student ID: 62130500014>
+### Information
+- Student Name: Jakkapong Praditthanachot
+- Student ID: 62130500014
