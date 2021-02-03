@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Js - HelloWorld App</title>
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body id="app" class="bg-gray-200">
+    <div class="rounded rounded-t-lg overflow-hidden shadow max-w-xs my-3 mx-auto  bg-white">
+        <img v-bind:src="wallpaper" class="w-full h-44" />
+        <div class="flex justify-center ">
+            <img v-bind:src="img" class="rounded-full border-solid border-white border-2 -mt-10 w-14">
+        </div>
+        <div class="text-center px-3 pb-6 pt-2">
+            <h3 class="text-black text-sm bold font-sans">{{name}}</h3>
+            <a v-bind:href="url">[SIT KMUTT]</a>
+            <h1>{{msg}}</h1>
+            <p v-if="shown">You can see this message.</p>
+            <p v-show="shown">You can see this message.(v-show)</p>
+        </div>
+        <div class="flex justify-center pb-3 text-grey-dark">
+            <div class="text-center mr-3 border-r pr-3">
+                <h2>34</h2>
+                <span>Photos</span>
+            </div>
+            <div class="text-center">
+                <h2>42</h2>
+                <span>Friends</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./profile.js"></script>
+</body>
+
+</html>
